@@ -1,12 +1,4 @@
 #!/bin/bash
-
-# Check for AWS CLI installation
-if ! command -v aws &> /dev/null
-then
-    echo "AWS CLI is not installed. Please install it to proceed."
-    exit 1
-fi
-
 echo "Collecting information from AWS..."
 
 # 1. How many accounts are there in the AWS organization?
